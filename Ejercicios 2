@@ -1,0 +1,38 @@
+var = int(input("Ingresa un valor entero: "))
+
+if var < 200:
+    print("Obtuve un valor menor que 200")
+    if var == 150:
+        print("Obtuve un valor igual a 150")
+    elif var == 100:
+        print("Obtuve un valor igual a 100")
+    elif var == 50:
+        print("Obtuve un valor igual a 50")
+    elif var < 50:
+        print("Obtuve un valor menor a 50")
+elif var < 50:
+    print("Obtuve un valor menor a 50")
+else:
+    print("No pude encontrar un valor apropiado")
+
+print("¡Adiós!")
+
+
+limite = int(input("Ingresa un número entero como límite del contador: "))
+
+contador = 1
+
+while contador < limite:
+    print("El contador es:", contador)
+    contador = contador + 1
+
+print("¡Adiós!")
+
+var = 1
+
+while var == 1:  # ¡Aquí se vuelve infinito!
+    num = input("Ingrese un número: ")
+    print("El numero que ingresó es: ", num)
+
+print("¡Adiós!")
+# Si quiere correr el código, defina var = 2
