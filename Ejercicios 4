@@ -1,0 +1,93 @@
+
+def ejercicio1():
+    # Ejercicio 1. Contar del 1 al 5
+
+    var = 1
+
+    while var < 6:
+        print('Valor Actual:', var)
+        var = var + 1
+    print("¡Listo!")
+
+#--------------------------------------
+def ejercicio2():
+    #Ejercicio 2. Pedir al usuario una contraseña hasta que sea correcta
+
+    contraseña_correcta = "python123"
+
+    entrada = input("Ingrese la contraseña: ")
+
+    while entrada != contraseña_correcta:
+        print("Contraseña incorrecta. Intente nuevamente.")
+        entrada = input("Ingrese la contraseña: ")
+
+    print("¡Contraseña correcta! Acceso concedido.")
+
+#-------------------------------------------
+
+def ejercicio3():
+    #Ejercicio 3. Llenar una lista hasta llegar a 5 elementos
+
+    lista = []
+
+    while len(lista) < 5:
+        elemento = input("Ingrese un elemento para la lista: ")
+        lista.append(elemento)
+        print("Elemento agregado. Lista actual:", lista)
+
+    print("¡Lista completa! Resultado final:", lista)
+ 
+#--------------------------------------------
+def ejercicio4():
+    # Ejercicio 4. Sumar hasta que el total supere 100
+
+    total = 0
+
+    while total <= 100:
+        try:
+            numero = int(input("Ingrese un número para sumar: "))
+            total += numero
+            print("Suma parcial:", total)
+        except ValueError:
+            print("Entrada no válida. Por favor ingrese un número entero.")
+
+    print("¡La suma superó 100! Total final:", total)
+
+#----------------------------------------------------------------------------
+def ejercicio5():
+    # Ejercicio 5. Repetir hasta que el usuario escriba "salir"
+
+    entrada = ""
+
+    while entrada.lower() != "salir":
+        entrada = input("Escriba algo (o escriba 'salir' para terminar): ")
+        print("Usted escribió:", entrada)
+
+    print("¡Programa terminado!")
+
+#----------------------------------------------------------------------------
+
+while True:
+    print("\nSeleccione un ejercicio para ejecutar:")
+    print("1. Contador hasta 9")
+    print("2. Pedir contraseña hasta que sea correcta")
+    print("3. Llenar una lista hasta 5 elementos")
+    print("4. Sumar números hasta superar 100")
+    print("5. Repetir hasta que el usuario escriba 'salir'")
+    print("Cualquier otro valor para salir.")
+
+    opcion = input("Ingrese el número de la opción (1-5): ")
+
+    if opcion == "1":
+        ejercicio1()
+    elif opcion == "2":
+        ejercicio2()
+    elif opcion == "3":
+        ejercicio3()
+    elif opcion == "4":
+        ejercicio4()
+    elif opcion == "5":
+        ejercicio5()
+    else:
+        print("Opción no válida. ¡Programa finalizado!")
+        break
