@@ -1,0 +1,70 @@
+a = 10
+b = 20 
+
+print('a + b =',a + b)
+print('a - b =',a - b)
+print('a * b =',a * b)
+print('b / a =',b / a)
+print('b % a =',b % a)
+print('a ** b =',a ** b)
+print('9 // 2 =',9 // 2)
+print('9.0 // 2.0 =',9.0 // 2.0)
+print('a == b =',a == b)
+print('a != b =',a != b)
+print('a > b =',a > b)
+print('a < b =',a < b)
+print('a >= b =',a >= b)
+print('a <= b =',a <= b)
+
+c = a + b
+print('c = a + b = ', c)
+c += a
+print('c += a =', c)
+c -= a
+print('c -= a =', c)
+c *= a
+print('c *= a =', c)
+c /= a
+print('c /= a =', c)
+c %= b
+print('c %= b =', c)
+c **= b
+print('c **= b =', c)
+c //= b
+print('c //= b =', c)
+
+a = 0b01010 #10
+a = 0b010100 #20
+print('a & b = ', a & b)
+print('a | b = ', a | b)
+print('a ^ b = ', a ^ b)
+print('~a = ', ~a)
+print('a << 2 = ', a << 2)
+print('a >> 2 = ', a >> 2)
+
+a = True
+b = False
+
+print('a and b = ', a and b)
+print('a or b = ', a or b)
+print('a not b = ', not(a and b))
+
+a = 'Hola'
+b = 'Mundo'
+print('a in  b = ', a in b)
+print('a not in b = ', a not in b)
+c = 'Hola'
+d = 'HolaaaMundo'
+print('c in  d = ', c in d)
+print('c not in d = ', c not in d)
+
+i = 0
+while i < 3:
+    var1 = int(input("Digite un número de 1 a 300: "))
+    i += 1
+    if var1 < 200:
+        print('1 - Valor verdadero', "var1 =", var1)
+    else:
+        print('2 - Valor errado', "var1 =", var1)
+
+print('¡Adiós!')
