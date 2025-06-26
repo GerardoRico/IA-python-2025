@@ -1,0 +1,31 @@
+for letra in 'Python':
+    print ('Letra Actual', letra)
+
+
+frutas = ['banano', 'manzana', 'mango']
+
+# Recorre cada elemento (palabra) de la lista
+for fruta in frutas:
+    print('Fruta Actual:', fruta)
+
+print("¡Adiós!")
+
+
+var = 10
+
+while var > 0:
+    print('Valor Actual:', var)
+    var = var - 1
+    if var == 5:
+        break
+
+print("¡Adiós!")
+
+
+for letra in 'Python':
+    if letra == 'h':
+        pass
+        print('Esto es un bloque de paso!')
+    print('Letra Actual:', letra)
+
+print("¡Adiós!")
